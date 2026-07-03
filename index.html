@@ -231,7 +231,7 @@
     .page-sub {
       font-size: 0.95rem;
       line-height: 1.7;
-      color: #B0ABA4;
+      color: #C6C1B8;
       margin-bottom: 3rem;
       max-width: 52ch;
     }
@@ -239,27 +239,29 @@
     .field label {
       display: block;
       font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.62rem;
+      font-size: 0.7rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: var(--mid);
+      color: var(--off-white);
       margin-bottom: 0.6rem;
     }
     .field input, .field textarea {
       width: 100%;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid var(--rule);
+      background: #1C1B18;
+      border: 1px solid #4A4640;
       color: var(--off-white);
       font-family: 'Libre Baskerville', Georgia, serif;
       font-size: 0.95rem;
-      padding: 0.6rem 0;
+      padding: 0.8rem 0.95rem;
       outline: none;
-      transition: border-color 0.2s;
+      transition: border-color 0.2s, background 0.2s;
       resize: none;
     }
-    .field input:focus, .field textarea:focus { border-bottom-color: var(--accent); }
-    .field input::placeholder, .field textarea::placeholder { color: #333; }
+    .field input:focus, .field textarea:focus {
+      border-color: var(--accent);
+      background: #22211D;
+    }
+    .field input::placeholder, .field textarea::placeholder { color: #6E6961; }
     .submit-row {
       margin-top: 2.5rem;
       display: flex;
